@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>McKinnon Status Page</title>
     <style>
       body {
         margin: 0;
         padding: 0;
         width: 100%;
+        font-family: 'Lato', sans-serif;
       }
       
       #main {
@@ -22,9 +24,40 @@
         margin-bottom: -50px;
       pointer-events: none;
       }
+      #report {
+        width: 697px;
+        margin: 0 auto;
+        display: block;
+        padding: 20px 0 0 0;
+        height: 40px;
+        font-size:14px;
+      }
+      #rright {
+        float:right;
+      }
+      #rleft {
+        float:left;
+      }
+      #topbar {
+        background-color:#333;
+        color:white;
+      }
+      a {
+        color:white;
+      }
     </style>
   </head>
   <body>
+    <div id="topbar">
+    <div id="report">
+        <div id="rleft">
+      Report outages to <a href="mailto:blake@mckinnonsc.vic.edu.au?subject=Reporting an Outage" target="newwindow">help@mckinnonsc.vic.edu</a>
+      </div>
+      <div id="rright">
+        <a href="https://www.google.com/url?q=https://groups.google.com/a/mckinnonsc.vic.edu.au/forum/%23!forum/statuspage-group/join&sa=D&source=hangouts&ust=1528873424609000&usg=AFQjCNF9x1HxPaXBbpSQE8RGV4hEh-PQ5A" target="_blank">Subscribe for Updates</a>
+      </div>
+    </div>
+    </div>
     <div id="main">
       <iframe src="https://docs.google.com/spreadsheets/d/1SjyqsX_AyO5DR244xWkip3TNVUVgDjhr6UYwSfAh-D4/edit?usp=sharing&rm=minimal" width="800" height="1400" frameborder="0"></iframe>
     </div>
